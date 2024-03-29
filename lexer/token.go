@@ -1,8 +1,8 @@
-package scanner
+package lexer
 
 type Token struct {
-	Type   int
+	Type    int
 	Lexeme  string
-	Literal interface{}
+	Literal any
 	Line    int
 }

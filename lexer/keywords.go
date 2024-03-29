@@ -1,4 +1,4 @@
-package scanner
+package lexer
 
 var keywords map[string]int
 

@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/rzksobhy/lox/scanner"
+	"github.com/rzksobhy/lox/lexer"
 )
 
 func init() {
-	scanner.InitKeywords()
+	lexer.InitKeywords()
 }
 
 func main() {
@@ -18,8 +18,8 @@ func main() {
 	}
 
 	source := string(data)
-	scanner := scanner.NewScanner(source)
-	tokens := scanner.ScanTokens()
+	lexer := lexer.NewLexer(source)
+	tokens := lexer.ScanTokens()
 
 	for _, token := range tokens {
 		fmt.Println(token)

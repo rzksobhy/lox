@@ -1,4 +1,4 @@
-package scanner
+package lexer
 
 const (
 	LEFT_PAREN  = iota
