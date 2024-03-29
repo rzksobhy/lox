@@ -1,0 +1,9 @@
+// this is a comment
+(( )){} // grouping stuff
+!*+-/=<> <= == // operators
+
+"this is a string"
+if // keyword
+foo // identifier
+69 // number
+420.5 // also a number
